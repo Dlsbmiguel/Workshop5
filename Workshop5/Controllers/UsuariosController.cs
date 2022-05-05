@@ -45,7 +45,7 @@ namespace Workshop5.Controllers
                 return NotFound();
             }
 
-            var notasUsuario = _context.Usuario.Include(p => p.Nota).ToListAsync();
+            var notasUsuario = _context.Usuario.Include(p => p.Notas).ToListAsync();
             return await notasUsuario;
         }
 
